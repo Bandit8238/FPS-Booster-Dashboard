@@ -1,1 +1,24 @@
-
+{
+  "name": "fps-booster-linux",
+  "version": "1.0.0",
+  "main": "../common/main.js",
+  "scripts": {
+    "start": "electron ../common",
+    "build": "electron-builder --linux deb"
+  },
+  "build": {
+    "appId": "fps.booster.app",
+    "productName": "FPS Booster",
+    "directories": {
+      "app": "../common"
+    },
+    "linux": {
+      "target": "deb",
+      "category": "Utility"
+    }
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.0.0"
+  }
+}
